@@ -4,6 +4,7 @@ Autor conceptual: Copilot
 """
 
 import os
+import json
 import requests
 
 class LLMClient:
@@ -13,11 +14,29 @@ class LLMClient:
     """
 
     def __init__(self):
-        self.api_key = os.getenv("LLM_API_KEY", "")
-        self.api_url = os.getenv("LLM_API_URL", "")
+        # 1. Intentar cargar desde variables de entorno
+        api_key = os.getenv("LLM_API_KEY")
+        api_url = os.getenv("LLM_API_URL")
 
-        if not self.api_key or not self.api_url:
-            raise ValueError("Faltan variables de entorno: LLM_API_KEY o LLM_API_URL")
+        # 2. Si no existen, intentar cargar config.json
+        if not api_key or not api_url:
+            try:
+                with open("backend/config/config.json") as f:
+                    cfg = json.load(f)
+                    api_key = api_key or cfg.get("LLM_API_KEY")
+                    api_url = api_url or cfg.get("LLM_API_URL")
+            except FileNotFoundError:
+                pass
+
+        # 3. Si aún falta algo, error elegante
+        if not api_key or not api_url:
+            raise ValueError(
+                "No se encontró configuración para el LLM. "
+                "Crea backend/config/config.json o define variables de entorno."
+            )
+
+        self.api_key = api_key
+        self.api_url = api_url
 
     def generate(self, system_prompt: str, user_message: str) -> str:
         """
@@ -25,7 +44,7 @@ class LLMClient:
         """
 
         payload = {
-            "model": "llm-model-name",  # sustituible
+            "model": "llm-model-name",
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_message}
@@ -45,3 +64,4 @@ class LLMClient:
 
         data = response.json()
         return data["choices"][0]["message"]["content"]
+
