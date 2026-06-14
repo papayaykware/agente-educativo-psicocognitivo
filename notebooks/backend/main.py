@@ -3,6 +3,9 @@ from api.routes_students import router as students_router
 from api.routes_curriculum import router as curriculum_router
 from api.routes_dkt import router as dkt_router
 from api.routes_affective import router as affective_router
+from api.routes_tutor import router as tutor_router
+app.include_router(tutor_router, prefix="/tutor")
+
 
 app = FastAPI(title="Agente Educativo Psicocognitivo")
 
