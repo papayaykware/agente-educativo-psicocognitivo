@@ -1,0 +1,20 @@
+concepts:
+  - id: A
+    name: Introducción a Álgebra
+    prerequisites: []
+
+  - id: B
+    name: Ecuaciones Lineales
+    prerequisites: ["A"]
+
+  - id: C
+    name: Sistemas de Ecuaciones
+    prerequisites: ["B"]
+
+  - id: D
+    name: Matrices
+    prerequisites: ["B"]
+
+  - id: E
+    name: Determinantes
+    prerequisites: ["D"]
