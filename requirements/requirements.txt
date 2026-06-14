@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+networkx
+psycopg2
+pgvector
+torch
+pykt-toolkit
+transformers
+sentencepiece
+stable-baselines3
+numpy
+pandas
+recharts
