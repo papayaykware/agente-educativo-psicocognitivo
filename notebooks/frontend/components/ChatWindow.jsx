@@ -2,8 +2,12 @@ import { useState } from "react";
 import { apiPost } from "../api/client";
 
 export default function ChatWindow() {
-  const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState("");
+  const response = await apiPost(`/tutor/student_001/A`, { text: input });
+  
+  const botMsg = {
+  sender: "agent",
+  text: response.agent_reply
+};
 
   async function sendMessage() {
     const userMsg = { sender: "user", text: input };
