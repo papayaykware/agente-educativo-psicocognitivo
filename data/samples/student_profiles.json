@@ -1,0 +1,12 @@
+{
+  "student_001": {
+    "working_memory": 0.55,
+    "ambiguity_tolerance": 0.40,
+    "visual_vs_analytical": 0.70
+  },
+  "student_002": {
+    "working_memory": 0.80,
+    "ambiguity_tolerance": 0.65,
+    "visual_vs_analytical": 0.45
+  }
+}
