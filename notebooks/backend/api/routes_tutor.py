@@ -78,3 +78,36 @@ interaction = {
 
 profile = update_profile(profile, interaction)
 
+from fastapi import APIRouter
+from tutor.pipeline import run_tutor_pipeline
+
+router = APIRouter()
+
+# almacenamiento en memoria (placeholder)
+PROFILE_STORE = {}
+
+def load_profile(student_id: str):
+    return PROFILE_STORE.get(student_id)
+
+def save_profile(student_id: str, profile):
+    PROFILE_STORE[student_id] = profile
+
+@router.post("/{student_id}/{concept_id}")
+def tutor(student_id: str, concept_id: str, payload: dict):
+    user_text = payload.get("text", "")
+    extra = {
+        "response_time": payload.get("response_time", 3.0),
+        "concept_name": payload.get("concept_name", f"Concepto {concept_id}")
+    }
+
+    result = run_tutor_pipeline(
+        student_id=student_id,
+        concept_id=concept_id,
+        user_text=user_text,
+        extra=extra,
+        load_profile_fn=load_profile,
+        save_profile_fn=save_profile,
+    )
+
+    return result
+
