@@ -64,3 +64,17 @@ def tutor(student_id: str, concept_id: str, payload: dict):
         "prompt_used": prompt,
         "agent_reply": agent_reply
     }
+
+from profile.updater import update_profile
+
+# Cargar perfil previo (más adelante: desde DB)
+profile = None
+
+# Actualizar perfil con la interacción actual
+interaction = {
+    "text": user_text,
+    "response_time": payload.get("response_time", 3.0)
+}
+
+profile = update_profile(profile, interaction)
+
