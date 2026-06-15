@@ -58,3 +58,6 @@ yarn-error.log*
 
 # Windows
 Thumbs.db
+
+backend/config/config.json
+
