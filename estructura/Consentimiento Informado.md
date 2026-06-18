@@ -1,4 +1,4 @@
-# 📄 Consentimiento Informado para Participación en Estudio de Investigación
+# 📄 Consentimiento informado para participación
 
 <div align="center">
 
