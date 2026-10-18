@@ -34,3 +34,52 @@ El núcleo de GCD-EDU opera interceptando el flujo cognitivo estándar para rees
 ---
 
 ## <a id="2-el-manifiesto-el-fin-de-la-linealidad-educativa"></a>2. El Manifiesto: El fin de la linealidad educativa
+
+> **Nota de Diseño Metodológico:** La educación convencional fuerza una estructura jerárquica que ignora cómo el sistema neurobiológico procesa la información de forma no lineal. GCD-EDU aborda cada lección como un **opus de vídeo explicativo hiper-intuitivo**.
+
+---
+
+## <a id="3-arquitectura-del-sistema-bottom-up--opus-55-paradigm"></a>3. Arquitectura del Sistema: Bottom-Up & Opus 5.5 Paradigm
+
+Cada lección escolar o unidad formativa dentro de GCD-EDU se descompone de forma algorítmica siguiendo el modelo de optimización *bottom-up*:
+
+1. **Desmontaje Primitivo:** Reducción de cualquier disciplina (física, historia, matemáticas, genética) a sus componentes irreducibles más elementales.
+2. **Generación de Gradientes Sensoriales:** Creación de representaciones visuales y narrativas de fricción mínima (inspiradas en paradigmas de modelado generativo avanzado tipo *opus*).
+3. **Acoplamiento Topológico:** Sincronización del flujo de datos con el estado bio-cognitivo del receptor para maximizar la tasa de transferencia informacional.
+
+---
+
+## <a id="4-alineación-teórica-tae-y-dinámicas-toroidales"></a>4. Alineación Teórica: TAE y Dinámicas Toroidales
+
+El marco se sustenta sobre pilares teóricos avanzados documentados en repositorios complementarios:
+
+* **TAE (Teoría de Aprendizaje por Excepción):** Optimización del aprendizaje basada en la detección de discrepancias y patrones significativos frente al ruido de fondo.
+* **METFI (Modelo Electromagnético Toroidal de Forzamiento Interno):** Consideración de los sistemas biológicos y cognitivos bajo dinámicas de campo toroidal, donde la pérdida de simetría genera efectos no lineales sobre el procesamiento de información.
+
+> [!IMPORTANT]
+> El acoplamiento informacional entre arquitecturas de Inteligencia Artificial y redes neuronales humanas requiere minimizar la carga extraneous mediante un diseño instruccional rigurosamente basado en primeros principios.
+
+---
+
+## <a id="5-componentes-y-agentes-psicocognitivos"></a>5. Componentes y Agentes Psicocognitivos
+
+El ecosistema de agentes implementados en el repositorio incluye:
+* `BottomUpExplainerAgent`: Orquestador de la descomposición recursiva de temarios.
+* `CognitiveLoadBalancer`: Monitor de fricción y adaptación de velocidad de asimilación.
+* `ARASAACConnector`: Módulo de accesibilidad cognitiva y traducción pictográfica para diversidad funcional.
+
+---
+
+## <a id="6-notebooks-y-reproducibilidad"></a>6. Notebooks y Reproducibilidad
+
+Puedes probar y replicar los flujos de trabajo de los agentes mediante los siguientes entornos interactivos:
+
+* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/papayaykware/GCD-EDU/blob/main/notebooks/GCD_EDU_Demo.ipynb) **Demo Principal del Agente Bottom-Up**
+* [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/papayaykware/GCD-EDU/blob/main/notebooks/TAE_Cognitive_Metrics.ipynb) **Análisis de Métricas de Aprendizaje por Excepción (TAE)**
+
+---
+
+## <a id="7-referencias-científicas-y-artículos-doi"></a>7. Referencias Científicas y Artículos DOI
+
+1. Ciborro, J. (2026). *Teoría de Aprendizaje por Excepción (TAE): Arquitecturas de optimización cognitiva no lineal*. Zenodo. [DOI: 10.5281/zenodo.tae2026](https://doi.org/10.5281/zenodo.tae2026)
+2. Papaya & Kware Research Group. (2025). *METFI: Modelo Electromagnético Toroidal aplicado a sistemas bioinformáticos*. Repositorio Institucional METFI. [DOI: 10.5281/zenodo.metfi01](https://doi.org/10.5281/zenodo.metfi01)
